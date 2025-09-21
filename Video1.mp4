@@ -1,5 +1,0 @@
-git add Video1.mp4
-git commit -m "Agrego video"
-git push origin main
-
-
