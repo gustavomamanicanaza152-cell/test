@@ -4,45 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video con redirección</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #111;
-      color: #fff;
-      flex-direction: column;
-      font-family: Arial, sans-serif;
-    }
-    video {
-      max-width: 90%;
-      border: 3px solid #fff;
-      border-radius: 10px;
-    }
-    p {
-      margin-top: 10px;
-      font-size: 1rem;
-      color: #aaa;
-    }
-  </style>
 </head>
-<body>
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;flex-direction:column;">
   <video id="miVideo" controls autoplay>
-    <!-- 👇 Cambia 'video.mp4' por el nombre real de tu archivo de video -->
     <source src="Video1.mp4" type="Video1/mp4">
     Tu navegador no soporta videos en HTML5.
   </video>
 
-  <p>El video se reproducirá y al terminar abrirá el enlace automáticamente.</p>
-
   <script>
     const video = document.getElementById('miVideo');
     video.addEventListener('ended', () => {
-      // 👇 Cambia esta URL por la que quieras abrir después del video
       window.location.href = "https://www.google.com";
     });
   </script>
 </body>
 </html>
+
